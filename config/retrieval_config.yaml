@@ -1,0 +1,4 @@
+# Section 5: Retrieval configuration
+embedding_model: "all-MiniLM-L6-v2"
+qdrant_collection: "dp_dynamic_rag"
+top_k: 5

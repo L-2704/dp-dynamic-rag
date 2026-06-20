@@ -2,5 +2,7 @@ venv/
 __pycache__/
 *.pyc
 .env
-data/
-
+data/qdrant_db/
+data/extracted_text/
+data/scraped_pdfs/
+data/manual_pdfs/*.pdf

@@ -1,0 +1,9 @@
+pyyaml
+qdrant-client
+sentence-transformers
+langchain
+pydantic
+python-dotenv
+requests
+beautifulsoup4
+pypdf

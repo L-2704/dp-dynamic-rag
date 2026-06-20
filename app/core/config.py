@@ -1,12 +1,12 @@
-import os
 import yaml
+from pathlib import Path
 
-CONFIG_PATH = os.path.join(os.path.dirname(__file__), "../../config/config.yaml")
+CONFIG_DIR = Path(__file__).resolve().parent.parent.parent / "config"
 
-def load_config():
-    if not os.path.exists(CONFIG_PATH):
-        return {}
-    with open(CONFIG_PATH, "r", encoding="utf-8") as f:
+def _load_yaml(filename: str) -> dict:
+    path = CONFIG_DIR / filename
+    with open(path, "r") as f:
         return yaml.safe_load(f)
 
-settings = load_config()
+ingestion_config = _load_yaml("ingestion_config.yaml")
+retrieval_config = _load_yaml("retrieval_config.yaml")
