@@ -1,0 +1,28 @@
+system:
+  environment: "macOS"
+  log_level: "INFO"
+
+network:
+  global_timeout_ms: 100000
+  max_retries: 3
+  backoff_factor: 2.0
+  max_concurrent_requests: 2
+
+models:
+  embedding: "BAAI/bge-small-en-v1.5"
+  llm_endpoint: "http://localhost:11434"
+  llm_model: "llama3.2:3b"
+
+scraping_targets:
+  - category: "welfare"
+    url: "https://delhipolice.gov.in/welfare"
+    enabled: true
+  - category: "circulars"
+    url: "https://delhipolice.gov.in/circulars"
+    enabled: true
+  - category: "security"
+    url: "https://delhipolice.gov.in/security-advisories"
+    enabled: true
+  - category: "drone_advisories"
+    url: "https://delhipolice.gov.in/drone-rules"
+    enabled: true
