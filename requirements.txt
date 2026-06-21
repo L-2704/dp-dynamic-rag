@@ -1,9 +1,8 @@
 pyyaml
 qdrant-client
 sentence-transformers
-langchain
+fastapi
+uvicorn
+ollama
 pydantic
 python-dotenv
-requests
-beautifulsoup4
-pypdf
