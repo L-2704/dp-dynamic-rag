@@ -1,0 +1,37 @@
+[
+  {
+    "category": "lost_report",
+    "page": 9,
+    "likely_scanned": true
+  },
+  {
+    "category": "mv_theft",
+    "page": 25,
+    "likely_scanned": true
+  },
+  {
+    "category": "mv_theft",
+    "page": 56,
+    "likely_scanned": true
+  },
+  {
+    "category": "mv_theft",
+    "page": 59,
+    "likely_scanned": true
+  },
+  {
+    "category": "mv_theft",
+    "page": 66,
+    "likely_scanned": true
+  },
+  {
+    "category": "mv_theft",
+    "page": 69,
+    "likely_scanned": true
+  },
+  {
+    "category": "mv_theft",
+    "page": 78,
+    "likely_scanned": true
+  }
+]

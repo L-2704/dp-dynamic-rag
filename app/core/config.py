@@ -10,3 +10,4 @@ def _load_yaml(filename: str) -> dict:
 
 ingestion_config = _load_yaml("ingestion_config.yaml")
 retrieval_config = _load_yaml("retrieval_config.yaml")
+app_config = _load_yaml("config.yaml")

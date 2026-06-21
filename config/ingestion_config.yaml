@@ -1,5 +1,33 @@
-# Section 5: Ingestion configuration
-categories: []
-source_types: []
-chunk_size: 500
-chunk_overlap: 50
+documents:
+  lost_report:
+    source_type: "manual"
+    file_path: "./data/manual_pdfs/lost_report.pdf"
+    category: "lost_report"
+    document_title: "Lost Report"
+    document_type: "form_guide"
+
+  mv_theft:
+    source_type: "manual"
+    file_path: "./data/manual_pdfs/mv_theft.pdf"
+    category: "mv_theft"
+    document_title: "MV Theft"
+    document_type: "form_guide"
+
+  pcc:
+    source_type: "scraped"
+    download_url: "https://pcccvr.delhipolice.gov.in/ClientApp/documents/UserManual_PCC.pdf"
+    category: "pcc"
+    document_title: "Police Clearance Certificate"
+    document_type: "form_guide"
+
+  cvr:
+    source_type: "scraped"
+    download_url: "https://pcccvr.delhipolice.gov.in/ClientApp/documents/UserManual_CVR.pdf"
+    category: "cvr"
+    document_title: "Character Verification Report"
+    document_type: "form_guide"
+
+chunking:
+  chunk_size_tokens: 500
+  chunk_overlap_tokens: 80
+  min_chars_for_text_page: 50
