@@ -13,7 +13,7 @@ from app.retrieval.retriever import retrieve
 from app.retrieval.llm import generate_answer
 import json
 
-CHUNKS_PATH = "data/sample_chunks.json"
+CHUNKS_PATH = "data/services_chunks.json"
 
 if __name__ == "__main__":
     with open(CHUNKS_PATH, "r") as f:

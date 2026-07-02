@@ -6,7 +6,7 @@ from qdrant_client.models import VectorParams, Distance, PointStruct
 from sentence_transformers import SentenceTransformer
 import hashlib
 
-EMBEDDING_MODEL_NAME = "all-MiniLM-L6-v2"
+EMBEDDING_MODEL_NAME = "paraphrase-multilingual-MiniLM-L12-v2"
 QDRANT_PATH = "data/qdrant_db"
 COLLECTION_NAME = "dp_dynamic_rag"
 
